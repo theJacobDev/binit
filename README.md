@@ -1,5 +1,7 @@
 
-# :wave: Binit 
+# :wave: Binit
+
+[![npm version](https://badge.fury.io/js/%40thejacobdev%2Fbinit.svg)](https://badge.fury.io/js/%40thejacobdev%2Fbinit)
 
 Binit is a **CLI** tool for you to quickly create a new project and Github repository from an existing boilerplate being hostd as a git repo.
 
