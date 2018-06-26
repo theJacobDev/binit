@@ -16,8 +16,8 @@ module.exports = {
   resetGitFiles: () => {
     fs.removeSync('.git')
     fs.removeSync('README.md')
-    fs.removeSync('LICENSE')
+    fs.removeSync('LICENSE.md')
     touch('README.md')
-    touch('LICENSE')
+    touch('LICENSE.md')
   }
 }
