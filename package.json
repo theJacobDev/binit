@@ -1,0 +1,34 @@
+{
+  "name": "init-from-boilerplate",
+  "version": "1.0.0",
+  "description": "CLI library to help with initializing project from exisiting boilerplate/example hosted on GitHub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "binit": "./index.js",
+    "binit reset": "./reset.js"
+  },
+  "keywords": [
+    "git",
+    "init",
+    "boilerplate",
+    "example",
+    "generator"
+  ],
+  "author": "Jacob Aleksandrowicz <jacob@jacobdev.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/rest": "^15.8.2",
+    "chalk": "^2.4.1",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "configstore": "^3.1.2",
+    "figlet": "^1.2.0",
+    "fs-extra": "^6.0.1",
+    "inquirer": "^6.0.0",
+    "simple-git": "^1.96.0",
+    "touch": "^3.1.0"
+  }
+}
