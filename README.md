@@ -1,7 +1,7 @@
 
 # :wave: Binit 
 
-Binit is a **CLI** tool for you to quickly create a new project and Github repository from an existing boilerplate.
+Binit is a **CLI** tool for you to quickly create a new project and Github repository from an existing boilerplate being hostd as a git repo.
 
 Follow me on [twitter](https://twitter.com/thejacobdev) or give this [project](https://github.com/theJacobDev/binit) a :star: if you find this tool useful :blue_heart:
 
