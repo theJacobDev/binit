@@ -2,12 +2,12 @@
 
 const chalk = require('chalk')
 const clear = require('clear')
-const shell = require('shelljs')
 const figlet = require('figlet')
 const files = require('./utils/files')
 const inputs = require('./utils/inputs')
 const messages = require('./utils/messages')
 const gh = require('./utils/github')
+const argv = require('minimist')(process.argv.slice(2));
 const log = console.log
 
 clear()
@@ -19,12 +19,6 @@ log(chalk.green(
 // Start only in directories without git initialized
 if (files.directoryExists('.git')) {
   log(chalk.red(messages.onlyEmptyDirectories))
-  process.exit()
-}
-
-// Check if use has git installed
-if (!shell.which('git')) {
-  log(chalk.red(messages.gitNotInstalled))
   process.exit()
 }
 
@@ -40,7 +34,7 @@ const getGithubToken = async () => {
   return token
 }
 
-const run = async () => {
+const main = async () => {
   try {
     const cloneRepo = await inputs.askForRepoToClone()
     await gh.clone(cloneRepo.url)
@@ -86,4 +80,18 @@ const run = async () => {
   }
 }
 
-run()
+const reset = async () => {
+  try {
+    await gh.setCredentials()
+    await gh.registerNewToken()
+    log(chalk.green(messages.successTokenReset))
+  } catch(err) {
+    log(chalk.red(err))
+  }
+}
+
+if (argv._[0] === 'reset') {
+  reset()
+} else {
+  main()
+}
