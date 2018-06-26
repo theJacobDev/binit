@@ -21,7 +21,7 @@ Follow me on [twitter](https://twitter.com/thejacobdev) or give this [project](h
 ### :sparkles: Features
 
 - Clone and automatically reset local git repository
-- Create new repository on Github (local or private)
+- Create new repository on Github (public or private)
 - Push your first commit to newly created repository
 
 
