@@ -5,7 +5,7 @@ Binit is a **CLI** tool for you to quickly create a new project and Github repos
 
 Follow me on [twitter](https://twitter.com/thejacobdev) or give this [project](https://github.com/theJacobDev/binit) a :star: if you find this tool useful :blue_heart:
 
-![demo gif](https://media.giphy.com/media/Moyp7YJ8yRzA6eNbN0/giphy.gif)
+![demo gif](https://media.giphy.com/media/y82raOBrEWqtUPP4ym/giphy.gif)
 
 ### :wrench: Install
 `yarn global add @thejacobdev/binit`
