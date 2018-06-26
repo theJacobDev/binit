@@ -1,5 +1,5 @@
 {
-  "name": "binit",
+  "name": "@thejacobdev/binit",
   "version": "0.0.1",
   "description": "CLI library initializing new project and remote repository from exisiting boilerplate/example hosted on GitHub",
   "main": "index.js",
