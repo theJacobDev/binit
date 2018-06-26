@@ -16,12 +16,6 @@ log(chalk.green(
   figlet.textSync('Binit', { horizontalLayout: 'full', verticalLayout: 'full' })
 ))
 
-// Start only in directories without git initialized
-if (files.directoryExists('.git')) {
-  log(chalk.red(messages.onlyEmptyDirectories))
-  process.exit()
-}
-
 const getGithubToken = async () => {
   let token = gh.getStoredToken()
 
@@ -36,6 +30,12 @@ const getGithubToken = async () => {
 
 const main = async () => {
   try {
+    // Start only in directories without git initialized
+    if (files.directoryExists('.git')) {
+      log(chalk.red(messages.onlyEmptyDirectories))
+      process.exit()
+    }
+
     const cloneRepo = await inputs.askForRepoToClone()
     await gh.clone(cloneRepo.url)
     files.resetGitFiles()
