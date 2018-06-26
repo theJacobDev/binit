@@ -1,6 +1,6 @@
 {
   "name": "@thejacobdev/binit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI tool for quickly creating a new project and Github repository from an existing boilerplate",
   "main": "index.js",
   "bin": {
