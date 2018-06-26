@@ -1,11 +1,8 @@
 {
-  "name": "init-from-boilerplate",
-  "version": "1.0.0",
-  "description": "CLI library to help with initializing project from exisiting boilerplate/example hosted on GitHub",
+  "name": "binit",
+  "version": "0.0.1",
+  "description": "CLI library initializing new project and remote repository from exisiting boilerplate/example hosted on GitHub",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "bin": {
     "binit": "./index.js",
     "binit reset": "./reset.js"
@@ -18,7 +15,7 @@
     "generator"
   ],
   "author": "Jacob Aleksandrowicz <jacob@jacobdev.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@octokit/rest": "^15.8.2",
     "chalk": "^2.4.1",
