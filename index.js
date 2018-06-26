@@ -56,10 +56,8 @@ const main = async () => {
       const push = await inputs.askToPush()
       if (push.push) {
         const commitMessage = await inputs.askForPushDetails()
-        const done = await gh.pushCommit(commitMessage.message)
-        if (done) {
-          log(chalk.green(messages.thanksForUsingBinit))
-        }
+        await gh.pushCommit(commitMessage.message)
+        log(chalk.green(messages.thanksForUsingBinit))
       }
     } else {
       log(chalk.green(messages.thanksForUsingBinit))
